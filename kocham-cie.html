@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kocham Cię ❤️</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff5f9e, #ff1744, #8e0038);
+      color: white;
+    }
+
+    .container {
+      text-align: center;
+      padding: 50px;
+      width: 90%;
+      max-width: 700px;
+      border-radius: 35px;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 0 50px rgba(255, 0, 100, 0.5);
+      border: 1px solid rgba(255,255,255,0.3);
+      animation: appear 2s ease;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin: 0 0 20px;
+      text-shadow: 0 0 20px #fff, 0 0 40px #ffb6d9;
+      animation: heartbeat 1.5s infinite;
+    }
+
+    p {
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 16px 35px;
+      border-radius: 50px;
+      background: white;
+      color: #e91e63;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 0 20px rgba(255,255,255,0.7);
+    }
+
+    .button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 35px white;
+    }
+
+    .heart {
+      position: absolute;
+      bottom: -50px;
+      font-size: 30px;
+      animation: float 8s linear infinite;
+      opacity: 0.8;
+    }
+
+    .heart:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .heart:nth-child(2) { left: 25%; animation-delay: 2s; }
+    .heart:nth-child(3) { left: 45%; animation-delay: 4s; }
+    .heart:nth-child(4) { left: 65%; animation-delay: 1s; }
+    .heart:nth-child(5) { left: 85%; animation-delay: 3s; }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.08);
+      }
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: scale(0.7);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.7rem;
+      }
+
+      .container {
+        padding: 35px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="heart">❤️</div>
+  <div class="heart">💖</div>
+  <div class="heart">💕</div>
+  <div class="heart">💗</div>
+  <div class="heart">💘</div>
+
+  <div class="container">
+    <h1>Kocham Cię ❤️</h1>
+
+    <p>
+      Jesteś dla mnie kimś wyjątkowym 💕
+      <br>
+      Ta strona jest tylko dla Ciebie 🌹
+    </p>
+
+    <!-- ZMIEŃ LINK PONIŻEJ -->
+    <a class="button" href="C:\Users\kowal\Desktop\Bez tytułu.png"
+
+   
+     IEND®B`‚" target="_blank">
+      Kliknij tutaj ❤️
+    </a>
+  </div>
+
+</body>
+</html>
